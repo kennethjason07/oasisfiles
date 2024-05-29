@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Oasis",
+  "version": "0.0.0.1",
+  "description": "A simple Chrome extension using React and TypeScript with Google Auth",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq8+ukfErCn9dWiy3WWGP6B94lHJCMoS04mtKU19GPKTwnRqGsG7YgRK07EZIOCXT+7bSKqmm52q/NKRA6CO/p4mWBE8r3TAOeABBpPDRv+ndbKPN/9ZbZFNj+RlcnG1lA9S2rX8x6ZDU+98zZHzV5N0KTqic0gvXy/Hcw2880+WR3f+f6B8vQY0jLwJs4C9AIO0UIWIoLLsJSwqm7r1pRGvHyg4KFaC6DbhwcP4LBR5jcvj9T5ymmEGQeN1xNgDeoyzZRzEtVviF3gtp+aW9FsjwYQlfNblAfVCD55t7XS1TYdFrlVzlMT8wz+QKpHhJFmFuWbakDAzJgr1cgm9NDQIDAQAB",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["identity","identity.email", "tabs"],
+  "background": {
+    "service_worker": "static/js/background.js"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "oauth2": {
+    "client_id": "734378269313-gdskh3mto71esfjgo54dh57tskrkf193.apps.googleusercontent.com",
+    "scopes": ["profile", "email","https://googleapis.com/auth/contacts"]
+  }
+}
